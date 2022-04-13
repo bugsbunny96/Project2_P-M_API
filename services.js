@@ -36,7 +36,7 @@ function show(data) {
 	//Loop to access all rows
 	Object.entries(data).forEach(([key, value]) => {
 	tab += `<tr>
-		<td>${value.name} </td>
+		<td><a class="btn btn-outline-warning" href="./book.html" role="button">${value.name}</a></td>
 		<td>${value.description}</td>
 		<td>${value.price}</td>
 		<td><img src=${value.img} alt="Image" width="200" height="200"></td>		

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packers&Movers</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    
+    <!-- FA-Icons -->
+    <script src="https://kit.fontawesome.com/3af28180df.js" crossorigin="anonymous"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="./index.css">
+    
+</head>
+<body>
+    <div class="container-lg-flex p-1">
+
+        <!-- header -->
+        <div class="container-fluid fixed-top" id="page-top">
+          <div class="row bg-danger text-light">
+              <div class="col-1  mx-1 my-1">
+                  <img class=" mx-3 my-3 img-fluid" src="https://cdn-icons-png.flaticon.com/512/172/172142.png" alt="LOGO" style="height: 100px;; max-width: 100px;">
+              </div>
+              <div class="col-4">
+                  <div class="card-body my-3">
+                      <h2 class="card-title fw-bold">Packers And Movers</h2>
+                      <h6 class="card-subtitle mb-2 text-black-50">We Do the Job Right...</h6>
+                  </div>
+              </div>
+
+              <!-- Dark/Light -->
+                <!-- <div class="col-lg-6">
+                 <div style="padding-left: 92%; padding-top: 6%;">
+                     <input type="checkbox" class="checkbox" id="checkbox" style="opacity: 0; position: absolute;">
+                     <label for="checkbox" class="label" style="background-color: #111; display: flex; position: relative; align-items: center; justify-content: space-between; border-radius: 50px; height: 26px; width: 50px;">
+                         <i class="fa-solid fa-moon" style="margin-left: 5px; color: #f1c40f;"></i>
+                         <i class="fa-solid fa-sun" style="margin-right  : 5px; color: #f39c12;"></i>
+                         <div class="ball" style="background-color: white; border-radius: 50%; position: absolute; top: 2px; left: 2px; height: 22px; width: 22px; transition: transform 0.2s linear "></div>
+                     </label>
+                 </div>
+                </div> -->
+                
+              <div class="col-auto">
+
+              <!-- nav -->
+              <div class="container-flex mt-5 fixed-top-end position-absolute" style="right: 5%;">
+                <button class="btn btn-outline-info" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-bars"></i></button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas-header">
+                    <h2 id="offcanvasRightLabel color-dark">Packers & Movers</h2>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body p-lg-0">
+                    <ul class="navbar-nav align-items-center pt-5">
+                        <li class="nav-item"><a class="nav-link active text-decoration-none text-capitalize text-black" aria-current="page" href="./index.html"><h4>Home</h4></a></li>
+                        <li class="nav-item pt-2"><a class="nav-link active text-decoration-none text-capitalize text-black" aria-current="page" href="./services.html"><h4>Services</h4></a></li>
+                        <li class="nav-item pt-2"><a class="nav-link active text-decoration-none text-capitalize text-black" aria-current="page" href="./book.html"><h4>Bookings</h4></a></li>
+                        <li class="nav-item pt-2"><a class="nav-link active text-decoration-none text-capitalize text-black" aria-current="page" href="https://www.freeprivacypolicy.com/live/be4ebb22-3254-4372-8c3b-40f6843fcafc" target="_blank"><h4>Privacy Policy</h4></a></li>
+                        <li class="nav-item pt-2"><a class="nav-link active text-decoration-none text-capitalize text-black" aria-current="page" href="./about.html"><h4>About</h4></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bookings -->
+        <div class="container-fluid py-2" style="margin-top: 10%;">
+            <h2 class="fw-bold text-center display-5"><span class="text-warning">Bookings</span> Page</h2>
+
+            <div class="input-group px-5 my-5">
+              <input type="text" class="form-control" placeholder="Enter Your Booking ID" aria-label="Enter Your Booking ID" aria-describedby="button-addon2">
+              
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-outline-warning rounded-end" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Search🔍</button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">Your Booking</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Your Order ID: ...</p>
+                      <p>Shipped From: ...</p>
+                      <p>Delivered To: ...</p>
+                      <p>Current Location: ...</p>
+                      <p>ETA: ...</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-warning" data-bs-dismiss="modal">OK 👍🏻</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row align-content-center justify-content-center pt-4 px-5" style="border: 1.5px solid yellow;">
+              <h2 class="fw-bold text-center display-5">Make Your <span class="text-warning">Bookings</span> Here</h2>
+              <!-- Service Booking Form -->
+              <form class="row g-3">
+                <fieldset disabled>
+                  <div class="mb-3">
+                    <label for="disabledSelect" class="form-label">Service Selected</label>
+                    <select id="disabledSelect" class="form-select">
+                      <option>disabledSelectServices</option>
+                    </select>
+                  </div>
+                </fieldset>
+
+                <div id=field>
+                  Number Of Item(s) To Be Delivered : 
+                  <button type="button" id="sub" class="sub" style="margin: 4px; cursor: pointer;">-</button>
+                  <input type="text" id="1" value=0 class="field" style="text-align: center; width: 40px; margin: 4px; color: salmon;">
+                  <button type="button" id="add" class="add" style="margin: 4px; cursor: pointer;">+</button>
+                </div>
+
+                <div class="mb-3">
+                  <label for="validationTextarea" class="form-label">Description About Pick-Up Item(s)</label>
+                  <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required example textarea" required></textarea>
+                  <div class="invalid-feedback">
+                    Please enter a message in the textarea.
+                  </div>
+                </div>
+
+                <!-- Pick-Up Location📍 -->
+                  <p class="pt-4">Pick-Up Location📍</p>
+                  <div class="col-md-6">
+                    <label for="validationServer03" class="form-label">City</label>
+                    <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+                    <div id="validationServer03Feedback" class="invalid-feedback">
+                      Please provide a valid city.
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <label for="validationServer04" class="form-label">State</label>
+                    <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+                      <option selected disabled value="">Choose...</option>
+                      <option>...</option>
+                    </select>
+                    <div id="validationServer04Feedback" class="invalid-feedback">
+                      Please select a valid state.
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <label for="validationServer05" class="form-label">Zip</label>
+                    <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
+                    <div id="validationServer05Feedback" class="invalid-feedback">
+                      Please provide a valid zip.
+                    </div>
+                  </div>
+                
+                <!-- Drop Location📍 -->
+                  <p class="pt-4">Drop Location📍</p>
+                  <div class="col-md-6">
+                    <label for="validationServer03" class="form-label">City</label>
+                    <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+                    <div id="validationServer03Feedback" class="invalid-feedback">
+                      Please provide a valid city.
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <label for="validationServer04" class="form-label">State</label>
+                    <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+                      <option selected disabled value="">Choose...</option>
+                      <option>...</option>
+                    </select>
+                    <div id="validationServer04Feedback" class="invalid-feedback">
+                      Please select a valid state.
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <label for="validationServer05" class="form-label">Zip</label>
+                    <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
+                    <div id="validationServer05Feedback" class="invalid-feedback">
+                      Please provide a valid zip.
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+                      <label class="form-check-label" for="invalidCheck3">
+                        Agree to terms and conditions
+                      </label>
+                      <div id="invalidCheck3Feedback" class="invalid-feedback">
+                        You must agree before submitting.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Submit form</button>
+                  </div>
+                </form>
+            </div>
+            
+        </div>
+
+        <!-- privacy_policy -->
+        <div class="container-fluid py-2">
+            <h2 class="fw-bold text-lg-center display-5">Our <span class="text-warning">Privacy Policy</span></h2>
+            <div class="container align-content-center justify-content-center text-lg-center align-content-lg-center"><button type="button" class="btn btn-warning align-content-center my-lg-3 fw-bold"><a href="https://www.freeprivacypolicy.com/live/be4ebb22-3254-4372-8c3b-40f6843fcafc" target="_block" style="text-decoration: none; color: black;">Privacy Policy 📜</a></button></div>
+        </div>
+        
+        <!-- footer -->
+        <footer class="footer mt-1 py-1 bg-danger">
+          <div class="container">
+            <span class="text-center">
+                <p>Design by: 
+                    <a class="text-white fw-bold" style="text-decoration: none;" href="https://bugsbunny96.github.io/rishabhResume/" target="_blank">
+                      RISHABH
+                    </a>
+                    <span>
+                        (Batch 36 Full Stack Web Development)
+                    </span>
+                  </p>
+              </span>
+          </div>
+          <div class="container text-center justify-content-center align-items-center fw-bold fs-1">
+            <p class="fs-3">Follow us on:</p>
+            <a style="color: black;" href="https://www.facebook.com/"><i class="fa-brands fa-facebook mx-lg-3"></i></a>
+            <a style="color: black;" href="https://twitter.com/"><i class="fa-brands fa-twitter mx-lg-3"></i></a>
+            <a style="color: black;" href="https://www.instagram.com/"><i class="fa-brands fa-instagram mx-lg-3"></i></a>
+            <a style="color: black;" href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in mx-lg-3"></i></a>
+          </div>
+        </footer>
+        
+    </div>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- JS -->
+    <script src="./book.js"></script>
+
+</body>
+</html>
